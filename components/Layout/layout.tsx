@@ -13,7 +13,7 @@ function Layout({ children }: any) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Container bg="black" color={"white"} borderRadius={"1rem"}>
+        <Container bg="black" color={"white"} borderRadius={"1rem"} data-testid={'test-layout'}>
           <Grid templateColumns={"auto 1fr auto"} gap={"1rem"} p={"1rem"}>
             <LeftBar />
             <MainBar>{children}</MainBar>
